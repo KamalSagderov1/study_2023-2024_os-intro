@@ -1,8 +1,8 @@
 ---
 ## Front matter
-title: "Лабораторная работа №1"
-subtitle: "Установка и конфигурация операционной системы на виртуальную машину"
-author: "Сагдеров Камал, НФИбд-04-22"
+title: "Лабораторная работа №2"
+subtitle: "Простейший вариант"
+author: "Сагдеров Камал"
 
 ## Generic otions
 lang: ru-RU
@@ -51,6 +51,20 @@ biblatexoptions:
   - language=auto
   - autolang=other*
   - citestyle=gost-numeric
+## Pandoc-crossref LaTeX customization
+figureTitle: "Рис."
+tableTitle: "Таблица"
+listingTitle: "Листинг"
+lofTitle: "Список иллюстраций"
+lotTitle: "Список таблиц"
+lolTitle: "Листинги"
+## Misc options
+indent: true
+header-includes:
+  - \usepackage{indentfirst}
+  - \usepackage{float} # keep figures where there are in the text
+  - \floatplacement{figure}{H} # keep figures where there are in the text
+---
 
 # Цель работы
 
@@ -202,3 +216,5 @@ kill 1234
 
 Я научился устанавливать систему на виртуальную машину и настраивать сервисы, необходимые для ее работы.
 
+::: {#refs}
+:::
